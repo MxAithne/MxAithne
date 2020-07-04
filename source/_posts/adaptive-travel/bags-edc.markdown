@@ -7,10 +7,12 @@ published: true
 date: 2016-07-01
 updated: 2016-11-18
 
-categories: [ blog ]
-tags: [ "Bags", "Luggage" ]
-disabilities: [ ] 
-
+categories: 
+  - adaptive-travel
+tags:
+	- Bags
+	- Luggage
+	
 image: false
 imageAltText: ""
 

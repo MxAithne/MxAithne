@@ -7,7 +7,8 @@ published: false
 date: 2006-12-07
 updated: 2006-12-08
 
-categories: [ blog ]
+categories: 
+  - adaptive-travel
 tags: [ "Wheelchair", "Public Transport", "Coaches" ]
 disabilities: [ "Wheelchair Users" ]
 

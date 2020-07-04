@@ -7,7 +7,8 @@ published: true
 date: 2016-07-01
 updated: 2016-07-01
 
-categories: [ blog ]
+categories: 
+  - adaptive-travel
 tags: [ "Kit", "Technology" ]
 disabilities: [ ]
 

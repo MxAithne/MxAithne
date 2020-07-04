@@ -7,7 +7,8 @@ published: false
 date: 2006-11-01
 updated: 2006-11-17
 
-categories: [ blog ]
+categories: 
+  - adaptive-travel
 tags: [ "Review" ]
 disabilities: [ "Wheelchair User", "Autism" ]
 

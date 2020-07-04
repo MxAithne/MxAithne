@@ -7,7 +7,8 @@ published: true
 date: 2016-01-01
 updated: 2016-01-02
 
-categories: [ blog ]
+categories: 
+  - adaptive-travel
 tags: [ "General" ]
 disabilities: [ "Wheelchair Users" ]
 

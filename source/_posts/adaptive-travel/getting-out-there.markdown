@@ -8,7 +8,8 @@ date: 2016-01-01
 updated: 2016-11-21
 
 travel: [ "General" ]
-categories: [ blog ]
+categories: 
+  - adaptive-travel
 tags: [ "Wheelchair", "Autism" ]
 
 image: true

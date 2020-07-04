@@ -8,7 +8,8 @@ date: 2016-07-01
 updated: 2016-07-01
 
 travel: [ "Kit", "Technology" ]
-categories: [ blog ]
+categories: 
+  - adaptive-travel
 tags: [ "Photography" ]
 
 image: true

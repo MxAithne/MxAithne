@@ -8,7 +8,8 @@ date: 2006-11-12
 updated: 2006-11-12
 
 travel: [ "Wheelchair", "Public Transport", "Buses", "Trains", "Trams", "Tube", "Coaches" ]
-categories: [ blog ]
+categories: 
+  - adaptive-travel
 tags: [ ]
 
 image: false

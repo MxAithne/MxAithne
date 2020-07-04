@@ -7,7 +7,8 @@ published: false
 date: 2006-07-01
 updated: 2006-07-01
 
-categories: [ blog ]
+categories: 
+  - adaptive-travel
 tags: [ "Wheelchair", "Public Transport", "Trains" ]
 disabilities: [ "Wheelchair Users" ]
 

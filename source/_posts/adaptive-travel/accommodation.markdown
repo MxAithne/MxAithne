@@ -6,9 +6,12 @@ published: true
 date: 2016-07-01
 updated: 2016-11-17
 
-categories: [ blog ]
-tags: [ "Accommodation" ]
-disabilities: [ "Wheelchair User", "Autism" ]
+categories: 
+  - adaptive-travel
+tags:
+  - Accommodation
+  - Wheelchair User
+  - Autism
 
 image: true
 imageAltText: ""

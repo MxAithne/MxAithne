@@ -7,7 +7,8 @@ published: true
 date: 2016-01-01
 updated: 2016-07-06
 
-categories: [ blog ]
+categories: 
+  - adaptive-travel
 tags: [ "Kit", "Luggage", "Wheelchair" ]
 disabilities: [ "Wheelchair Users" ]
 
