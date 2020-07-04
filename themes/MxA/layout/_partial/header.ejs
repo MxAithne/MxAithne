@@ -1,0 +1,45 @@
+<!-- header.ejs -->
+
+<%
+	var title = null;
+	if (page.category) title = page.category;
+	if (page.tag) title = "#" + page.tag;
+%>
+
+<nav id="nav-home">
+    
+    <a href="/">
+        <img src="/icons/home.svg" class="icon">
+    </a>
+      
+    <h1 id="title">  
+      <a href="/">
+        <span class="site-title"><%- config.title %></span>
+      </a>
+
+      <% if (page.categories) { %>
+        
+        <span class="title-divider"> &gt; </span>
+        
+        <a href="/<%- page.categories.first().path %>">
+          <span class="category"><%- page.categories.first().name ? titlecase(page.categories.first().name.replace("-", " ")) : ''  %></span>
+        </a>
+        
+        <% title = page.title; %>
+      
+      <% } %>
+
+      <span class="title-divider"> &gt; </span>
+
+      <% if (title) { %>
+          <span class="page-title"><%- title ? titlecase(title.replace("-", " ")) : '' %></span>
+      <% } %>
+    </h1>
+    
+    <% if (page.categories) { %>
+      <a href="/<%- page.categories.first().path %>">
+        <img src="/icons/close.svg" class="icon">
+      </a>
+    <% } %>
+
+</nav>
