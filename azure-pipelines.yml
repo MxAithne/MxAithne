@@ -1,4 +1,5 @@
 # Node.js
+
 # Build a general Node.js project with npm.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
@@ -14,7 +15,30 @@ steps:
   inputs:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
-
+- task: Npm@1
+  inputs:
+    command: 'install'
+    workingDir: '$(Build.Repository.LocalPath)'
+- task: CmdLine@2
+  inputs:
+    script: 'sudo npm install -g hexo-cli'
+- task: CmdLine@2
+  inputs:
+    script: |
+      echo Changing DIR to $(Build.Repository.LocalPath)
+      cd $(Build.Repository.LocalPath)
+      echo Generating static files...
+      hexo generate
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: 'public'
+    Contents: '**'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
 - script: |
     npm install
     npm run build
