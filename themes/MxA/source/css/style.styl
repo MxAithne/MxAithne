@@ -17,10 +17,13 @@ body
   margin: 0
   height: 100vh
 
+h1, h2
+  font-family: MuseoModerno
+
 p
   margin-top: 0
 
-#home
+#home // Applied to inedex.ejs
   max-width: 960px
   margin: 0 auto
 
@@ -29,6 +32,16 @@ p
     display: flex
     justify-content: center
     align-items: center
+
+  header
+    flex-direction: column
+
+    h1, h2
+      margin: 0.2em
+
+    h2
+      max-width: 80vw
+      text-align: center
 
   nav
     flex-direction: column
@@ -56,7 +69,7 @@ p
     #nav-bottom
       width: 20em
       max-width: 20em
-      max-height: 6em
+      height: 6em
       flex-direction: column
       flex-wrap: wrap
       justify-content: space-around
@@ -81,9 +94,6 @@ p
 
     p
       margin: 0
-
-  h1
-    font-family: MuseoModerno
 
 #nav-home
   display: flex

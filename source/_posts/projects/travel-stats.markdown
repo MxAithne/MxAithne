@@ -2,7 +2,8 @@
 
 title: "Travel Stats"
 topics: [ "Travel", "Trains" ]
-
+categories: 
+  - projects
 ---
 
 On the 22nd of April 2016 I decided that for the sake of interest I would start keeping a record of all the train journeys that I've made. Origanially the idea was to keep track of the number of journeys, but over time I started tracking a bit more data. This is an evolving project and you can read more about it on the <a href="/projects/travel-stats">Travel Stats Project Page</a> but below you can see some statstics about my travel and some visualisations of those statistics.

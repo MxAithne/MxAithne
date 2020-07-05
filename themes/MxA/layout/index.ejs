@@ -1,3 +1,5 @@
+<!-- The landing page - index.ejs -->
+
 <body id="home">
   <header>
     <h1><%- config.title %> </h1>
@@ -25,8 +27,10 @@
   </nav>
 
   <main>
+    <% if (config.message) { %>
     <aside>
       <%- config.message %>
     </aside>
+    <% } %>
   </main>
 </body>
