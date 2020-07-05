@@ -9,28 +9,42 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
 
 darkBackground()
-  background-color: rgba(0, 0, 0, 0.6)
-  border-radius: 5px
-  padding: 5px
+  background-color: rgba(0, 0, 0, 0.7)
+  border-radius: .5em
+  padding: .5em
 
 // Styling
 
 body
   font-family: "Calibri", sans-serif
+  font-size: 18px
   background-color: darkblue
   color: white
-  background-image: url(/assets/testing/nicholas-robert-jTpECTclado-unsplash.jpg)
+  background-image: url(/photographs/IMG_2116.JPEG)
   background-size: cover
   background-repeat: no-repeat
   background-position: center
+  background-attachment: fixed
   margin: 0
   height: 100vh
 
 h1, h2
   font-family: MuseoModerno
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7)
+  font-size: 1em
 
 p
   margin-top: 0
+
+a
+  text-decoration: none
+  color: inherit
+
+article
+  max-width: 36em
+  margin: 0 auto
+  darkBackground()
+  background-color: hsla(0, 0%, 20%, 1)
 
 #home // Applied to inedex.ejs
   max-width: 960px
@@ -47,10 +61,12 @@ p
 
     h1, h2
       margin: 0.2em
+      font-size: 2em
 
     h2
       max-width: 80vw
       text-align: center
+      font-size: 1.2em
 
   nav
     flex-direction: column
@@ -74,6 +90,7 @@ p
         max-width: 200px
         max-height: 200px
         border-radius: 100px
+        box-shadow: 0px 0px 4px 0px black;
 
     #nav-bottom
       width: 20em
@@ -85,17 +102,15 @@ p
       margin-top: 1em
 
       a
-        darkBackground()
-        text-decoration: none
-        color: inherit
         width: 8em
         display: block
         text-align: center
+        darkBackground()
 
   aside
-    darkBackground()
     max-width: 640px
     text-align: left
+    darkBackground()
 
     p
       margin: 0
@@ -103,9 +118,14 @@ p
 #navigation
   display: flex
   align-items: center
+  max-width: 36em
+  margin: 0 auto 1em auto
+  darkBackground()
   
   h1
     flex-grow: 1
+    padding: 0 0.5em 0 0.5em
+    margin: 0
 
 #list
   ul
@@ -113,13 +133,28 @@ p
     padding: 0
     display: grid
     grid-gap: 1em
-    grid-template-columns: repeat(auto-fit,10rem)
+    grid-template-columns: repeat(auto-fit,8.5em)
     justify-content: center
     margin: 0 1em
 
   li
     margin: 0
     darkBackground()
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    .missingimage, img
+      width: 7.5em
+      height: 5.8em
+      text-align: center
+      border-radius: 0.25em
+
+    div
+      width: 100%
+      min-height: 2.5em
+
+
 
 .icon
   width: 2em
