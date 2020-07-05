@@ -39,7 +39,3 @@ steps:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'drop'
     publishLocation: 'Container'
-- script: |
-    npm install
-    npm run build
-  displayName: 'npm install and build'
