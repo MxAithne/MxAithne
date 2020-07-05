@@ -1,3 +1,5 @@
+// Globals
+
 @font-face
   font-family: "MuseoModerno"
   font-style: normal
@@ -5,6 +7,13 @@
   font-display: swap
   src: url(/fonts/museomoderno.woff2) format("woff2")
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+
+darkBackground()
+  background-color: rgba(0, 0, 0, 0.6)
+  border-radius: 5px
+  padding: 5px
+
+// Styling
 
 body
   font-family: "Calibri", sans-serif
@@ -76,31 +85,41 @@ p
       margin-top: 1em
 
       a
+        darkBackground()
         text-decoration: none
         color: inherit
-        background-color: rgba(0, 0, 0, 0.6)
-        border-radius: 0.5em
-        padding: 0.5em
         width: 8em
         display: block
         text-align: center
 
   aside
+    darkBackground()
     max-width: 640px
-    background-color: rgba(0, 0, 0, 0.6)
-    border-radius: 5px
-    padding: 5px
     text-align: left
 
     p
       margin: 0
 
-#nav-home
+#navigation
   display: flex
   align-items: center
   
   h1
     flex-grow: 1
+
+#list
+  ul
+    list-style-type: none
+    padding: 0
+    display: grid
+    grid-gap: 1em
+    grid-template-columns: repeat(auto-fit,10rem)
+    justify-content: center
+    margin: 0 1em
+
+  li
+    margin: 0
+    darkBackground()
 
 .icon
   width: 2em

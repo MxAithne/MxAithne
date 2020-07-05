@@ -5,6 +5,9 @@ title: My Name
 date: 2016-06-20
 updated: 2016-06-20
 
+categories: 
+  - inklings-of-identity
+  
 ---
 
 'Our names they mean nothing they change throughtout time' (Blackmore's Night)

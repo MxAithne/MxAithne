@@ -1,17 +1,20 @@
-<%- partial('_partial/header') %>
-
 <!-- List of posts ( archive.ejs ) -->
+<body id="list">
 
-<main>
-	<ul id="postlist">
-		<% page.posts
-			.filter((a) => a.published)
-			.forEach(function(item){ %>
-			<%- partial('_partial/content-list', {item: item}) %>
-		<% }); %>
-	</ul>
-</main>
+	<%- partial('_partial/navigation') %>
 
-<!-- Paginator -->
+	<main>
+		<ul id="postlist">
+			<% page.posts
+				.filter((a) => a.published)
+				.forEach(function(item){ %>
+				<%- partial('_partial/content-list', {item: item}) %>
+			<% }); %>
+		</ul>
+	</main>
 
-<%- partial('_partial/pagination') %>
+	<!-- Paginator (disabled in config.yml) -->
+
+	<%- partial('_partial/pagination') %>
+
+</body>

@@ -1,9 +1,9 @@
 <!-- Post Laytout (post.ejs) -->
 <body class="post">
+  
+  <%- partial('_partial/navigation', {title: page.title, category: page.categories[0]}) %>
+  
   <main>
-
-    <%- partial('_partial/header', {title: page.title, category: page.categories[0]}) %>
-
     <article>
 
       <% if (page.youtube) { %>

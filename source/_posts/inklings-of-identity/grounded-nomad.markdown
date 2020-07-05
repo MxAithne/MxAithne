@@ -5,6 +5,8 @@ title: Grounded Nomad
 date: 2016-06-20
 updated: 2016-06-20
 
+categories: 
+  - inklings-of-identity
 ---
 
 For most of my adult life I've lived as a nomad and even though I now have a slightly more settled life due to disability, I have never truely been able to let go of being a nomad. <!--more-->
