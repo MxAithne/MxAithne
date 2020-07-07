@@ -3,13 +3,17 @@
 title: "Wheels vs"
 
 published: true
-date: 2016-06-17
-updated: 2016-07-01
+first: 2016-06-17
+date: 2016-07-01
 
 categories: 
   - thoughts
-topics: [ "Public Transport", "Buses", "Trains", "Wheelchair" ]
-disabilities: [ "Wheelchair Users" ]
+
+tags: 
+  - Public Transport
+  - Buses
+  - Trains
+  - Wheelchair
 
 image: true
 imageAltText: "Image Alt Text"
